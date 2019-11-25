@@ -14,7 +14,6 @@ public class Set implements Runnable {
 	private int start;
 	private int end;
 	private int sum;
-	private int amountOfThreads;
 	
 	
 	public Set(int start, int end) {
@@ -42,13 +41,6 @@ public class Set implements Runnable {
 	public void setSum(int sum) {
 		this.sum = sum;
 	}
-	public int getAmountOfThreads() {
-		return amountOfThreads;
-	}
-	public void setAmountOfThreads(int amountOfThreads) {
-		this.amountOfThreads = amountOfThreads;
-	}
-
 
 	public boolean isPrime(int number) {
 		for (int i = 2; i < number; i += 1) 
